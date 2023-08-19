@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="MachineTestTC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="324"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="232" height="324"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7g5-Y5-qRW">
+                        <rect key="frame" x="0.0" y="0.0" width="232" height="324"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CAR1" translatesAutoresizingMaskIntoConstraints="NO" id="yoe-0Y-gFC" customClass="AnimatableImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="232" height="324"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.92128556969999997" green="0.22955695279999999" blue="0.14155745810000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.14776557160000001" green="0.188489288" blue="0.30296435560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="_cornerSides" value="10"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoRun" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="yoe-0Y-gFC" secondAttribute="bottom" id="5N4-EY-6MX"/>
+                            <constraint firstItem="yoe-0Y-gFC" firstAttribute="leading" secondItem="7g5-Y5-qRW" secondAttribute="leading" id="FeD-ho-aIl"/>
+                            <constraint firstAttribute="trailing" secondItem="yoe-0Y-gFC" secondAttribute="trailing" id="Vdb-pC-XUY"/>
+                            <constraint firstItem="yoe-0Y-gFC" firstAttribute="top" secondItem="7g5-Y5-qRW" secondAttribute="top" id="zFM-kS-OdM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7g5-Y5-qRW" secondAttribute="bottom" id="JIN-do-OFb"/>
+                <constraint firstItem="7g5-Y5-qRW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="LVx-yg-JyG"/>
+                <constraint firstAttribute="trailing" secondItem="7g5-Y5-qRW" secondAttribute="trailing" id="RYo-5c-JGU"/>
+                <constraint firstItem="7g5-Y5-qRW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bDm-wG-R3w"/>
+            </constraints>
+            <size key="customSize" width="232" height="324"/>
+            <point key="canvasLocation" x="204.58015267175571" y="-109.1549295774648"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="yoe-0Y-gFC">
+            <size key="intrinsicContentSize" width="1000" height="1250"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="CAR1" width="1000" height="1250"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
